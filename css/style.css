@@ -1,0 +1,127 @@
+body{
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+}
+
+/*--Title--*/
+.title-1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 2%;
+    color: #fff;
+}
+
+.title-2{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 2%;
+    color: #2E2F42;
+}
+
+.title-3{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 2%;
+    color: #2E2F42;
+}
+
+/*--Header--*/
+.logo{
+    text-decoration: none;
+    color: #2E2F42;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 21px;
+    letter-spacing: 3%;
+    vertical-align: middle;
+}
+.logo-text{
+    color: #4D5AE5;
+}
+
+.header-nav-list{
+    list-style: none;
+}
+
+.header-nav-link{
+    text-decoration: none;
+    color: #2E2F42;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 2%;
+    
+}
+
+.header-nav-link:hover {
+    color: #404bbf;
+}
+
+.address-list{
+    list-style: none;
+}
+
+.address-link{
+    text-decoration: none;
+    font-style: normal;
+    font-size: 16px;
+    color: #434455;
+    line-height: 1.5;
+    letter-spacing: 2%;
+
+}
+
+.address-link:hover{
+    color: #404bbf;
+}
+
+/*--Intro--*/
+.intro{
+    background-color: #2E2F42;
+}
+
+.intro-btn{
+    background-color:#4D5AE5;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.intro-btn:hover{
+    background-color: #404BBF;
+}
+
+/*--Benefits--*/
+.benefits-list{
+    list-style: none;
+}
+
+.benefits-text{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 2%;
+}
+
+/*--Our-team--*/
+.our-team{
+    background-color: #F4F4FD;
+}
+
+/*--footer--*/
+.footer{
+    background-color: #2E2F42;
+}
+
+.footer-text{
+    color: #F4F4FD;
+    font-size: 16px;
+    letter-spacing: 1.5;
+    letter-spacing: 2%;
+}
+
+.footer-logo{
+    color: #F4F4FD;
+}
