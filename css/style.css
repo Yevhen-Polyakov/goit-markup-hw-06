@@ -6,7 +6,7 @@ body{
 }
 
 /*--Title--*/
-.title-1{
+.title-info{
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
@@ -14,7 +14,7 @@ body{
     color: #fff;
 }
 
-.title-2{
+.title-benefits{
     font-size: 36px;
     font-weight: 700;
     text-align: center;
@@ -24,7 +24,7 @@ body{
     text-transform: capitalize
 }
 
-.title-3{
+.title-list{
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -35,7 +35,7 @@ body{
 /*--Header--*/
 .logo{
     text-decoration: none;
-    
+    color: #4D5AE5;
     font-size: 18px;
     font-weight: 700;
     font-family: "Raleway", sans-serif;
@@ -45,9 +45,6 @@ body{
     vertical-align: middle;
 }
 
-.logo-text-web{
-    color: #4D5AE5;
-}
 
 .logo-text-studio{
     color: #2E2F42;
@@ -139,7 +136,7 @@ body{
 .footer-text{
     color: #F4F4FD;
     font-size: 16px;
-    letter-spacing: 1.5;
+    line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
