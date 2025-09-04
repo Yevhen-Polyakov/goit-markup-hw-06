@@ -1,6 +1,7 @@
 body{
     font-family: "Roboto", sans-serif;
     color: #434455;
+
 }
 
 /*--Title--*/
@@ -34,9 +35,10 @@ body{
     color: #2E2F42;
     font-size: 18px;
     font-weight: 700;
+    font-family: "Raleway" sans-serif;
     text-transform: uppercase;
-    line-height: 21px;
-    letter-spacing: 3%;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
     vertical-align: middle;
 }
 .logo-text{
