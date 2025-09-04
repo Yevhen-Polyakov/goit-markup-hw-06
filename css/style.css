@@ -1,6 +1,7 @@
 body{
     font-family: "Roboto", sans-serif;
     color: #434455;
+    background-color: #ffffff;
 
 }
 
@@ -9,40 +10,47 @@ body{
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
     color: #fff;
 }
 
 .title-2{
     font-size: 36px;
     font-weight: 700;
+    text-align: center;
     line-height: 1.11;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
     color: #2E2F42;
+    text-transform: capitalize
 }
 
 .title-3{
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
     color: #2E2F42;
 }
 
 /*--Header--*/
 .logo{
     text-decoration: none;
-    color: #2E2F42;
+    
     font-size: 18px;
     font-weight: 700;
-    font-family: "Raleway" sans-serif;
+    font-family: "Raleway", sans-serif;
     text-transform: uppercase;
     line-height: 1.17;
     letter-spacing: 0.03em;
     vertical-align: middle;
 }
-.logo-text{
+
+.logo-text-web{
     color: #4D5AE5;
+}
+
+.logo-text-studio{
+    color: #2E2F42;
 }
 
 .header-nav-list{
@@ -55,29 +63,31 @@ body{
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 2%;
-    
+    letter-spacing: 0.02em;
 }
 
-.header-nav-link:hover {
+.header-nav-link:hover,
+.header-nav-link:focus {
     color: #404bbf;
 }
 
+.address{
+     font-style: normal;
+}
 .address-list{
     list-style: none;
 }
 
 .address-link{
     text-decoration: none;
-    font-style: normal;
     font-size: 16px;
     color: #434455;
     line-height: 1.5;
-    letter-spacing: 2%;
-
+    letter-spacing: 0.02em;
 }
 
-.address-link:hover{
+.address-link:hover,
+.address-link:focus{
     color: #404bbf;
 }
 
@@ -89,10 +99,14 @@ body{
 .intro-btn{
     background-color:#4D5AE5;
     color: #FFFFFF;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
     cursor: pointer;
 }
 
-.intro-btn:hover{
+.intro-btn:hover,
+.intro-btn:focus {
     background-color: #404BBF;
 }
 
@@ -101,10 +115,15 @@ body{
     list-style: none;
 }
 
+.benefits-list-item{
+    background-color: #FFFFFF;
+}
+
+
 .benefits-text{
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
 }
 
 /*--Our-team--*/
@@ -121,7 +140,7 @@ body{
     color: #F4F4FD;
     font-size: 16px;
     letter-spacing: 1.5;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
 }
 
 .footer-logo{
