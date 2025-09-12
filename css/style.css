@@ -70,6 +70,7 @@ section{
 .wrap-nav{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .logo{
@@ -102,9 +103,7 @@ section{
     margin-right: 332px;
 }
 
-.header-nav-list-item{
-    padding: 24px 0;
-}
+
 
 .header-nav-link{
     text-decoration: none;
@@ -113,6 +112,7 @@ section{
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 24px 0;
 }
 
 .header-nav-link:hover,
