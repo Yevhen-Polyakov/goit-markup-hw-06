@@ -198,7 +198,7 @@ section{
 .our-team-list-item{
     background-color: #FFFFFF;
     text-align: center;
-    width: calc((100% – 72px)/4)
+     width: calc((100% - 48px) / 3)
     
 }
 
