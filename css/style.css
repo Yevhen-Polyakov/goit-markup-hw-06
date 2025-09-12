@@ -67,6 +67,11 @@ section{
     border-bottom: 1px solid #E7E9FC;
 }
 
+.wrap-nav{
+    display: flex;
+    align-items: center;
+}
+
 .logo{
     text-decoration: none;
     color: #4D5AE5;
@@ -177,7 +182,7 @@ section{
     border: 0;
     padding: 0;
     white-space: nowrap;
-    clip-path: inset (100%);
+    clip-path: inset(100%);
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
 }
