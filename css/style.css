@@ -10,6 +10,10 @@ h1, h2, h3, h4, h5, h6, p, ul {
     padding: 0;
 }
 
+img{
+    display: block;
+}
+
 section{
     padding: 120px 0px;
 }
@@ -178,9 +182,7 @@ section{
     background-color: #FFFFFF;
     text-align: center;
     
-    
 }
-
 
 .benefits-text{
     font-size: 16px;
