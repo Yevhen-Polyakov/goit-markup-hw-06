@@ -81,7 +81,6 @@ section{
     display: block;
 }
 
-
 .logo-text-web{
     color: #2E2F42;
 }
@@ -89,8 +88,6 @@ section{
 .header-nav{
     display: flex;
     align-items: center;
-    
-
 }
 
 .header-nav-list{
@@ -176,12 +173,12 @@ section{
     position: absolute;
     width: 1px;
     height: 1px;
-    margin: - 1px;
+    margin: -1px;
     border: 0;
     padding: 0;
     white-space: nowrap;
-    clip-path: inset ( 100% );
-    clip: rect( 0  0  0  0 );
+    clip-path: inset (100%);
+    clip: rect(0, 0, 0, 0);
     overflow: hidden;
 }
 
@@ -227,7 +224,7 @@ section{
     display: block;
 }
 
-.our-team-list{
+.cart-list{
     list-style: none;
     display: flex;
     flex-flow: row wrap;
@@ -235,9 +232,17 @@ section{
     gap: 48px 24px;
 }
 
-.our-portfolio-list-item {
-    border: 1px solid #E7E9FC;
+.cart-item {
+    
     width: 360px;
+}
+
+/*---portfolio----*/
+
+.cart-desc{
+     padding: 32px 16px;
+     border: 1px solid #e7e9fc;
+     border-top:none;
 }
 
 /*--footer--*/
