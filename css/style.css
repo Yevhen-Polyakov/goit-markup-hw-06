@@ -23,7 +23,7 @@ section{
     margin: 0px 156px;
     margin: 0 auto;
     overflow: hidden;
-    padding: 0 15px;
+    
 }
 
 /*--Title--*/
@@ -35,6 +35,8 @@ section{
     color: #fff;
     text-align: center;
     margin-bottom: 48px;
+    max-width: 496px;
+    display: inline-block;
 }
 
 .title-benefits{
@@ -86,12 +88,13 @@ section{
 .wrap-nav{
     display: flex;
     align-items: center;
+    gap: 332px;
 }
 
 .header-nav{
     display: flex;
     align-items: center;
-    padding: 25.5px 0px;
+    
 
 }
 
@@ -99,7 +102,10 @@ section{
     list-style: none;
     display: flex;
     gap: 40px;
-    margin-right: 332px;
+}
+
+.header-nav-list-item{
+    padding: 24px 0;
 }
 
 .header-nav-link{
@@ -123,6 +129,7 @@ section{
 .address-list{
     list-style: none;
     display: flex;
+    align-items: center;
     gap: 40px;
 }
 
@@ -142,6 +149,9 @@ section{
 /*--Intro--*/
 .intro{
     background-color: #2E2F42;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    text-align: center;
 }
 
 .intro-btn{
@@ -156,6 +166,7 @@ section{
     padding: 16px 32px;
     border-radius: 4px;
     border: none;
+    min-width: 169px
 }
 
 .intro-btn:hover,
@@ -187,6 +198,7 @@ section{
 .our-team-list-item{
     background-color: #FFFFFF;
     text-align: center;
+    width: calc((100% – 72px)/4)
     
 }
 
@@ -234,14 +246,11 @@ section{
     letter-spacing: 0.02em;
 }
 
-.footer-logo-wrap{
+.wrap-footer-logo{
+    padding: 0;
     margin-bottom: 16px;
     display: inline-block;
 
-}
-.wrap-footer-logo{
-    padding: 0;
-    margin-bottom: 17.5px;
 }
 
 .footer-logo{
