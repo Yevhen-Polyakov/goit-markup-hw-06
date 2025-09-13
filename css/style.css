@@ -193,13 +193,13 @@ section{
 }
 
 .benefits-list-item{
-    width: calc((100% - 72px) / 3);
+    width: calc((100% - 72px) / 4);
 }
 
 .our-team-list-item{
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
-    width: calc((100% - 72px) / 3);
+    width: calc((100% - 72px) / 4);
     
 }
 
@@ -239,7 +239,7 @@ section{
 }
 
 .cart-item {
-    width: calc((100% - 48px) / 2);
+    width: calc((100% - 48px) / 3);
     max-width:  360px;
 }
 
