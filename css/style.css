@@ -1,3 +1,7 @@
+:root {
+    --primary-brand-color: #4d5ae5;
+}
+
 body{
     font-family: "Roboto", sans-serif;
     color: #434455;
@@ -66,7 +70,7 @@ section{
 
 .header{
     border-bottom: 1px solid #E7E9FC;
-    box-shadow:  0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1 66, 0.08; 
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .wrap-nav{
@@ -77,7 +81,7 @@ section{
 
 .logo{
     text-decoration: none;
-    color: #4D5AE5;
+    color: var(--primary-brand-color);
     font-size: 18px;
     font-weight: 700;
     font-family: "Raleway", sans-serif;
@@ -164,22 +168,30 @@ section{
 
 /*--Intro--*/
 .intro{
-    background: linear-gradient(#2E2F42B2, #2E2F42B2), url('../images/bg-intro.jpg') center/cover no-repeat;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/bg-intro.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding-top: 188px;
     padding-bottom: 188px;
     text-align: center;
+    max-width: 1440px;
 }
 
 .svg-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
     padding: 24px 100px;
     border: 1px solid #8E8F99;
     border-radius: 4px;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     background-color: #F4F4FD;
 }
 
 .intro-btn{
-    background-color:#4D5AE5;
+    background-color: var(--primary-brand-color);
     color: #FFFFFF;
     font-weight: 500;
     line-height: 1.5;
@@ -251,13 +263,13 @@ section{
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
     width: calc((100% - 72px) / 4);
-    box-shadow: 0px 1px 12px rgba(46, 47, 66, 0.3), 0px 2px 4px rgba(46, 47, 66, 0.2);
-    
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .social-list{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 24px;
     padding: 0 16px;
     list-style: none;
     margin-top: 8px;
@@ -271,18 +283,23 @@ section{
 .social-link{
     width: 100%;
     height: 100%;
-    background-color: #4D5AE5;
+    background-color: var(--primary-brand-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .social-link:hover,
 .social-link:focus{
-    background-color: #404BBF;
+    background-color: #31d0aa;
+}
+
+.icon-svg{
+    fill: #f4f4fd;
 }
 
 
@@ -308,7 +325,7 @@ section{
 }
 
 .cart-item:hover{
-    box-shadow: 0px 1px 12px rgba(46, 47, 66, 0.3), 0px 2px 4px rgba(46, 47, 66, 0.2);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
 }
 
 .description-img{
@@ -317,11 +334,11 @@ section{
 }
 
 .desc-cart-text{
-    background-color: #4D5AE5;
+    background-color: var(--primary-brand-color);
     color: #F4F4FD;
     font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 2%;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     font-weight: 400;
     padding: 40px 32px 164px 32px;
     position: absolute;
@@ -375,18 +392,28 @@ section{
 .social-media{
     font-size: 16px;
     font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 2%;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     color: #FFFFFF;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
 }
 .footer-content{
     display: flex;
-    gap: 120px;
+    
+}
+
+.footer-logo-conteyner{
+    margin-right: 120px;
 }
 
 .footer-social-list{
     list-style: none;
     display: flex;
     gap: 16px;
+    align-items: baseline;
+}
+
+.footer-social-item{
+    width: 40px;
+    height: 40px;
 }
