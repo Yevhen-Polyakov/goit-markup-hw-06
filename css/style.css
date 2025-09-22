@@ -176,6 +176,8 @@ section{
     padding-bottom: 188px;
     text-align: center;
     max-width: 1440px;
+    margin: 0 auto;
+
 }
 
 .svg-wrap{
@@ -295,7 +297,7 @@ section{
 
 .social-link:hover,
 .social-link:focus{
-    background-color: #31d0aa;
+    background-color: #404bbf;
 }
 
 .icon-svg{
@@ -340,7 +342,7 @@ section{
     line-height: 1.5;
     letter-spacing: 0.02em;
     font-weight: 400;
-    padding: 40px 32px 164px 32px;
+    padding: 40px 32px;
     position: absolute;
     top: 0;
     left: 0;
