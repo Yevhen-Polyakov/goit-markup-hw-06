@@ -112,11 +112,28 @@ section{
     letter-spacing: 0.02em;
     padding: 24px 0;
     display: block;
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-nav-link:hover,
 .header-nav-link:focus {
     color: #404bbf;
+}
+
+.header-nav-link.current {
+    color: #404bbf;
+}
+
+.header-nav-link.current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    width: 100%;
+    background-color: #404bbf;
+    border-radius: 2px;
 }
 
 .address{
@@ -136,6 +153,7 @@ section{
     color: #434455;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:hover,
@@ -145,10 +163,18 @@ section{
 
 /*--Intro--*/
 .intro{
-    background-color: #2E2F42;
+    background: linear-gradient(#2E2F42B2, #2E2F42B2), url('../images/bg-intro.jpg') center/cover no-repeat;
     padding-top: 188px;
     padding-bottom: 188px;
     text-align: center;
+}
+
+.svg-wrap{
+    padding: 24px 100px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    background-color: #F4F4FD;
 }
 
 .intro-btn{
@@ -163,7 +189,8 @@ section{
     padding: 16px 32px;
     border-radius: 4px;
     border: none;
-    min-width: 169px
+    min-width: 169px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .intro-btn:hover,
@@ -190,17 +217,11 @@ section{
     list-style: none;
     display: flex;
     gap: 24px;
+    padding-bottom: 5px;
 }
 
 .benefits-list-item{
     width: calc((100% - 72px) / 4);
-}
-
-.our-team-list-item{
-    background-color: #FFFFFF;
-    border-radius: 0px 0px 4px 4px;
-    width: calc((100% - 72px) / 4);
-    
 }
 
 .benefits-text{
@@ -225,6 +246,45 @@ section{
     background-color: #F4F4FD;
 }
 
+.our-team-list-item{
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+    width: calc((100% - 72px) / 4);
+    box-shadow: 0px 1px 12px rgba(46, 47, 66, 0.3), 0px 2px 4px rgba(46, 47, 66, 0.2);
+    
+}
+
+.social-list{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    list-style: none;
+    margin-top: 8px;
+}
+
+.social-item{
+    width: 40px;
+    height: 40px;
+}
+
+.social-link{
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link:hover,
+.social-link:focus{
+    background-color: #404BBF;
+}
+
+
 .photo{
     width: 100%;
     display: block;
@@ -236,11 +296,44 @@ section{
     flex-flow: row wrap;
     justify-content: center;
     gap: 48px 24px;
+    margin-bottom: 5px;
 }
 
 .cart-item {
     width: calc((100% - 48px) / 3);
     max-width:  360px;
+    cursor: pointer;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cart-item:hover{
+    box-shadow: 0px 1px 12px rgba(46, 47, 66, 0.3), 0px 2px 4px rgba(46, 47, 66, 0.2);
+}
+
+.description-img{
+    position: relative;
+    overflow: hidden; 
+}
+
+.desc-cart-text{
+    background-color: #4D5AE5;
+    color: #F4F4FD;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2%;
+    font-weight: 400;
+    padding: 40px 32px 164px 32px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cart-item:hover .desc-cart-text{
+    transform: translateY(0%);
+
+
 }
 
 /*---portfolio----*/
@@ -250,6 +343,8 @@ section{
      border: 1px solid #e7e9fc;
      border-top:none;
 }
+
+
 
 /*--footer--*/
 .footer{
@@ -270,10 +365,27 @@ section{
     margin-bottom: 16px;
     margin-right: 0;
     display: inline-block;
-
-
 }
 
 .footer-logo{
     color: #F4F4FD;
+}
+
+.social-media{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 2%;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+.footer-content{
+    display: flex;
+    gap: 120px;
+}
+
+.footer-social-list{
+    list-style: none;
+    display: flex;
+    gap: 16px;
 }
