@@ -377,7 +377,11 @@ section{
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    
+}
+
+.social-section{
+    display: flex;
+    gap: 80px;
 }
 
 .footer-text{
@@ -408,9 +412,6 @@ section{
     margin-bottom: 16px;
 }
 
-.footer-logo-container{
-    margin-right: 120px;
-}
 
 .footer-social-list{
     list-style: none;
@@ -489,6 +490,12 @@ section{
     background-color: #4D5AE5;
     border: none;
     border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form-btn:hover,
+.footer-form-btn:focus{
+    background-color:#404BBF;
 }
 
 .footer-input-icon{
@@ -713,7 +720,7 @@ section{
     letter-spacing: 0.04em;
     color: #ffffff;
     cursor: pointer;
-    background-color: #4D5AE5;
+    background-color:#4D5AE5;
     border: none;
     border-radius: 4px;
     margin: 0 auto;
