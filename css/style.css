@@ -366,8 +366,6 @@ section{
      border-top:none;
 }
 
-
-
 /*--footer--*/
 .footer{
     background-color: #2E2F42;
@@ -376,12 +374,11 @@ section{
 .footer-content{
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
+    
 }
 
-.social-section{
-    display: flex;
-    gap: 80px;
+.footer-logo-container{
+    margin-right: 120px ;
 }
 
 .footer-text{
@@ -390,6 +387,10 @@ section{
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
+}
+
+.footer-social{
+    margin-right: 80px;
 }
 
 .wrap-footer-logo{
